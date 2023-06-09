@@ -5,11 +5,13 @@ class Quiz {
   final List<Question> questions;
   final String title;
   final String description;
+  final String type;
 
   Quiz(
       {@required this.questions,
       @required this.title,
-      @required this.description});
+      @required this.description,
+      @required this.type});
 
   List<Question> getQuestions() {
     return questions;
@@ -21,5 +23,9 @@ class Quiz {
 
   String getDescription() {
     return description;
+  }
+
+  String getType() {
+    return type;
   }
 }
